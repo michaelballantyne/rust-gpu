@@ -37,6 +37,8 @@ pub fn get_simple_intrinsic(ccx: &CrateContext, item: &ast::ForeignItem) -> Opti
         "powif32" => "llvm.powi.f32",
         "powif64" => "llvm.powi.f64",
         "ptx_tid_x" => "llvm.nvvm.read.ptx.sreg.tid.x",
+        "ptx_bid_x" => "llvm.nvvm.read.ptx.sreg.ctaid.x",
+        "ptx_bdim_x" => "llvm.nvvm.read.ptx.sreg.ntid.x",
         "sinf32" => "llvm.sin.f32",
         "sinf64" => "llvm.sin.f64",
         "cosf32" => "llvm.cos.f32",

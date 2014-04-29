@@ -2201,6 +2201,8 @@ pub fn declare_intrinsics(ccx: &mut CrateContext) {
     ifn!("llvm.pow.f64" fn(t_f64, t_f64) -> t_f64);
 
     ifn!("llvm.nvvm.read.ptx.sreg.tid.x" fn() -> t_i32);
+    ifn!("llvm.nvvm.read.ptx.sreg.ntid.x" fn()-> t_i32);
+    ifn!("llvm.nvvm.read.ptx.sreg.ctaid.x" fn() -> t_i32);
 
     ifn!("llvm.sqrt.f32" fn(t_f32) -> t_f32);
     ifn!("llvm.sqrt.f64" fn(t_f64) -> t_f64);

@@ -4144,6 +4144,8 @@ pub fn check_intrinsic_type(ccx: &CrateCtxt, it: &ast::ForeignItem) {
                 ty::mk_f64())
             }
             "ptx_tid_x" => (0, Vec::new(), ty::mk_i32()),
+            "ptx_bid_x" => (0, Vec::new(), ty::mk_i32()),
+            "ptx_bdim_x"=> (0, Vec::new(), ty::mk_i32()),
             "sinf32" => (0, vec!( ty::mk_f32() ), ty::mk_f32()),
             "sinf64" => (0, vec!( ty::mk_f64() ), ty::mk_f64()),
             "cosf32" => (0, vec!( ty::mk_f32() ), ty::mk_f32()),
